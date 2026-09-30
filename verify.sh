@@ -1,4 +1,5 @@
 #!/bin/sh
 set -eu
 python3 -m unittest discover -s tests -v
+python3 -m invoice_reconciliation doctor
 python3 -m invoice_reconciliation fixtures/transactions.csv

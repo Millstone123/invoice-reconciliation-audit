@@ -8,11 +8,12 @@
 ./verify.sh
 ```
 
-The verification workflow runs the unit suite and the fixture report. On macOS it finishes with a desktop calculation smoke check.
+The verification workflow runs the unit suite, a host integration check, and the fixture report.
 
 ## Usage
 
 ```sh
+python3 -m invoice_reconciliation doctor
 python3 -m invoice_reconciliation fixtures/transactions.csv
 ```
 
