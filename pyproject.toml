@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-reconciliation-audit"
+version = "1.0.0"
+description = "Deterministic CSV invoice reconciliation reports"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+invoice-reconciliation-audit = "invoice_reconciliation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["invoice_reconciliation*"]
